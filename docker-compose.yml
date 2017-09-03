@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+        database:
+                image: postgres:9.6
+                ports: 
+                        - "5011:5432"
+                volumes:
+                        - db_data:/var/lib/postgresql
+                restart: always
+                environment:
+                        POSTGRES_USER: postgres
+                        POSTGRES_PASSWORD: postgres
+volumes:
+        db_data:
