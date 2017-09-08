@@ -2,3 +2,4 @@ Api/.idea/
 __pycache__/
 Api/venv/
 Api/config.py
+DataVisualiser/Rplots.pdf
