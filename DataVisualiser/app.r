@@ -31,13 +31,13 @@ mat <- matrix(list(), nrow=2, sprints_amount)
 for (i in 1:sprints_amount){
 	mat[ ,i] = c(sp_committed[i],sp_finished[i])
 }
-
+x11()
 attach(mtcars)
 par(mfrow=c(2,1))
 bp = barplot(rbind(sp_finished, sp_committed), main="Sprints overview", ylab="Story points", beside=TRUE, col=c("blue", "green"))
+plot(sp_finished - sp_committed,main='Story points surplus', type = 'o')
 
-dev.off()
-##we manipulate data to fit our second graph
+Sys.sleep(99999999999)
 
 
 
